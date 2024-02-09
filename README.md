@@ -1,5 +1,5 @@
 # Kubernetes_Security_
-![alt text](image-8.png)
+![alt text](https://tse4.mm.bing.net/th?id=OIP.hh0FCRTE-yWIGGs6p1odlgHaEc&pid=Api&P=0&h=220)
 
 ### **Securing kubernetes cluster is very important**
 Getting access from k8s platform to the underlying operating system.
@@ -25,7 +25,7 @@ With multiple mechanisms
 - Security best practise - security should be redundant
 ----------------------------------------------------
 
-![alt text](image-1.png)
+![alt text](https://hosting.analythium.io/content/images/size/w2400/2021/04/architecture.png)
 
 
    # **1. To build secure images.**
@@ -63,12 +63,14 @@ How to do image scanning.
 
 
 ### ***Once the image is build and pass through scanning , then it passes to further process.***
-![alt text](image.png)
+
     - But if vulnerability is scanned , gets updated.
     - Scan image regularly in the registry.
 
 
 # **2. Avoid using Root User**
+![alt text](https://1.bp.blogspot.com/-2wNuX_rEkd8/WPN650mSz3I/AAAAAAAAAbI/ILYXBJI369g8L049nAqdAt_nvYI1zW29ACLcB/s1600/root.jpg)
+   
 - As we know that uid is 0
 - Root user have all privileges 
 - If attacker get the access of root user , he then easily break out to the container and can access the host
@@ -88,7 +90,7 @@ How to do image scanning.
 
  # **3. Users and Permissions**
     
- ![alt text](image-4.png)
+ ![alt text](https://documents.trendmicro.com/images/TEx/articles/how-users-are-related-to-roles-via-the-RoleBindings.jpg)
     
     - Authentication - who can access the cluster?
     - Authorization - What permissions do they have?
@@ -107,7 +109,7 @@ How to manage permissions in k8s
 ------------------------------------------------------------------------------
 ## In k8s some resources are namespaced and some are cluster scoped
 
-![alt text](image-2.png)
+![alt text](https://www.styra.com/wp-content/uploads/2022/10/styra_resource_blog_what-is-rbac.png)
 
    ## **a. Role**
 
@@ -134,7 +136,7 @@ And do cluster wide operations.
 - It works on whole cluster , instead of particular namespace. 
 - Kubernetes administrators can get cluster roles associated to users , that allow them to create view and delete different resources such as nodes, namespaces and volumes.
 ----------------------------------------------------------------------------------
-![alt text](image-3.png)
+![alt text](https://anote.dev/wp-content/uploads/2021/01/Kubernetes2-Page-15.jpg)
 
 - We also have non-human user.
 - If you are deploying k8s cluster through jenkins pipeline.
@@ -188,10 +190,10 @@ Communication between pods
 
 --------------------------------------------------------
 
-![alt text](image-5.png)
+![alt text](https://trstringer.com/images/why-mtls1.png)
 # **5. Encrypt Communication**
 ## mTLS between Services 
-![alt text](image-6.png)
+![alt text](https://trstringer.com/images/why-mtls2.png)
 - By default communication btw pods is unencrypted, basically in text.
 - Attacker could read communication between pods in plain text.
 - You can enable mTLS  between pods , so all the communication between pods are encrypted.
@@ -210,7 +212,7 @@ Communication between pods
     - Like credentials, secret tokens , private keys
     - Only base64 encrypted data can be decoded
 ------------------------------------------------------------------------
-![alt text](image-7.png)
+![alt text](https://www.padok.fr/hubfs/Images/Blog/kubernetes-secret-management-process.png)
 ## **Use kubernetes own solution**
 - Enable encryption using EncryptionConfiguration resource
 - But you still have to manage the encryption key 
@@ -278,7 +280,7 @@ Communication between pods
 
 
 # **9. Configure security policies**
-![alt text](image-10.png)
+
 - Know and apply all security best practices
 - If your team members don’t know how to secure each and every thong of k8s cluster .
 - You will have to check each configuration to make sure everything is secure, manually.
@@ -302,7 +304,7 @@ Communication between pods
  - Runs Within a short time 
  - Make your application available to your users with minimal affect on user experience.
 
-![alt text](image-11.png)
+
  -------
  ### For that you need to a tool that allows you to recover te cluster in the same state.
  ------------------
