@@ -310,7 +310,7 @@ Communication between pods
  
  ### Can reduce the recovery time significantly.
 
- ![alt text](image-9.png)
+ ![alt text](https://www.baculasystems.com/wp-content/uploads/2019/11/Kubernetes-01.jpg)
  ----------------
  Instead of manually performing disaster recovery.
  You can use these tools.
